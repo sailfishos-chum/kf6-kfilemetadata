@@ -34,12 +34,6 @@ Requires:       qt6-qtbase-devel
 %description devel
 %{summary}.
 
-%package        doc
-Summary:        Developer Documentation files for %{name}
-BuildArch:      noarch
-%description    doc
-Developer Documentation files for %{name} for use with KDevelop or QtCreator.
-
 %prep
 %autosetup -n %{name}-%{version}/upstream -p1
 
@@ -65,7 +59,3 @@ mkdir -p %{buildroot}%{_kf6_plugindir}/kfilemetadata/writers/
 %{_kf6_libdir}/libKF6FileMetaData.so
 %{_kf6_libdir}/cmake/KF6FileMetaData
 %{_kf6_includedir}/KFileMetaData/
-%{_qt6_docdir}/*.tags
-
-%files doc
-%{_qt6_docdir}/*.qch
