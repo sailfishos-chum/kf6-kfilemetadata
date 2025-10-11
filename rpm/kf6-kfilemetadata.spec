@@ -48,6 +48,7 @@ mkdir -p %{buildroot}%{_kf6_plugindir}/kfilemetadata/writers/
 
 %files -f %{name}.lang
 %license LICENSES/*.txt
+%{_kf6_bindir}/kfilemetadata_dump6
 %{_kf6_datadir}/qlogging-categories6/kfilemetadata*
 %{_kf6_libdir}/libKF6FileMetaData.so.*
 %dir %{_kf6_plugindir}/kfilemetadata/
